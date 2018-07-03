@@ -1,0 +1,35 @@
+<h1>List of planets</h1>
+<link rel="stylesheet" href="/css/listOfPlanets.css">
+<a href="/solarsystem/add">Add star</a>
+<table id="container">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Orbital Period</th>
+        <th>Image</th>
+    </tr>
+    {{#solarsystem}}
+    <tr id="row-{{planetid}}">
+        <td class="demo">
+            <a href="/solarsystem/{{planetid}}">{{planetid}}</a>
+        </td>
+        <td class="demo">
+            <a href="/solarsystem/{{planetid}}">{{name}}</a></td>
+        <td class="demo">
+            <a href="/solarsystem/{{planetid}}"> {{orbitalperiod}}</a></td>
+        <td class="demo">
+            <a href="/solarsystem/{{planetid}}">{{image}}</a></td>
+        <td class="demo">
+            <button onclick="deletePlanet({{planetid}})">delete</button>
+        </td>
+        <td class="demo">
+            <a href="#" onclick="editPlanet({{planetid}})">
+                <img src="/icons/edit.png" alt="Edit">
+            </a>
+        </td>
+    </tr>
+    {{/solarsystem}}
+</table>
+<script src="scripts/listOfPlanets.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<a href="List of Planets"></a>

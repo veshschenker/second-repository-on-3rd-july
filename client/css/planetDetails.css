@@ -1,0 +1,22 @@
+body{
+    margin: 100px;
+    background-image: url('/images/background.jpg');
+    background-repeat:repeat;
+    height: 80%;
+    width: 80%;
+}
+
+#container{
+    height: 400px;
+    width: 300px;
+}
+
+span{
+    display: inline-block;
+    width: 150px;
+}
+
+img{
+    height: 200px;
+    width:200px;
+}
